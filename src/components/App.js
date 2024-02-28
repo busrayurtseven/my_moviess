@@ -153,8 +153,7 @@ class App extends React.Component{
                 }>
                 </Route>
 
-                <Route path="/edit/:id" render={(props) => (
-
+                {/* <Route path="/edit/:id" render={(props) => (
                     <EditMovie
                         {...props}
                         onEditMovie={(id, movie) => {
@@ -166,8 +165,14 @@ class App extends React.Component{
 
                     )}>
 
-                </Route>
-                
+                </Route> */}
+
+
+                <Route
+                    path="/edit/:id"
+                    element={<EditMovie onEditMovie={(id, movie) => this.editMovie(id, movie)} />}
+                />
+
                 </Routes>
             </Router>
           );
