@@ -152,26 +152,11 @@ class App extends React.Component{
                     />
                 }>
                 </Route>
-
-                {/* <Route path="/edit/:id" render={(props) => (
-                    <EditMovie
-                        {...props}
-                        onEditMovie={(id, movie) => {
-                            this.editMovie(id, movie)
-                        }
-                        }
-
-                    />
-
-                    )}>
-
-                </Route> */}
-
-
-                <Route
-                    path="/edit/:id"
-                    element={<EditMovie onEditMovie={(id, movie) => this.editMovie(id, movie)} />}
-                />
+                <Route path="/edit/:id" element={
+                    <EditMovie 
+                        onEditMovie={(id, movie) => this.editMovie(id, movie)}
+                     />
+                }/>
 
                 </Routes>
             </Router>
@@ -180,10 +165,4 @@ class App extends React.Component{
     }
 }
 
-//functional component
-//const App=()=>{
-//    return (
-//        <h1>My Movies</h1>
-//    )
-//}
 export default App;

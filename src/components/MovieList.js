@@ -29,7 +29,7 @@ const MovieList =(props) =>{
                                     to={`edit/${movie.id}`}>
                                         Edit
                                     </Link>
-                                    <h2><span className="badge badge-info">{movie.rating}</span></h2>
+                                    <h2><span className="badge bg-primary">{movie.rating}</span></h2>
                             </div>
                         </div>
                     </div>

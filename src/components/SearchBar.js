@@ -12,7 +12,7 @@ class SearchBar extends React.Component {
 
         return (
             <form onSubmit={this.handleFormSubmit}>
-                <div className="form-row mb-5">
+                <div className="form-row mb-5 mt-3 d-flex">
                     <div className="col-10">
                         <input 
                             onChange={this.props.searchMovieProp}   
